@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    user-select:none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*header*/
+.header {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background: #eaeaea;
+    opacity: 0.9;
+    filter: Alpha(opacity=90);
+    z-index: 5;
+}
+
+.header .headerInner{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header .headerInner .logo{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    background: url("../img/logo.gif") center;
+}
+
+.header .headerInner .logoText{
+    font-family: "BankGothic Lt BT", sans-serif;
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    left: 20px;
+    bottom: 7px;
+}
+
+.header .headerInner .nav_list{
+    display: inline-block;
+    line-height: 60px;
+    float: right;
+}
+
+.header .headerInner .nav_list a{
+    display: block;
+    font-size: 15px;
+    color: #333;
+    padding: 0 30px;
+}
+
+/*图片滚动部分*/
+div.banner{
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: url("../img/banner_bg.gif") center;
+    background-size: cover;
+    z-index: 1;
+}
+
+div.banner .bannerInner{
+    width: 60%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.banner .bannerInner .fa-github-square{
+    font-size: 40px;
+    color: #fff;
+    margin-top: 35px;
+}
+
+div.banner .bannerInner .bannerContent .bannerContentTitle{
+    font-size: 20px;
+    color: #eaeaea;
+    margin-top: 10px;
+}
+
+div.banner .bannerInner .bannerContent .bannerContentText{
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/*wrap*/
+div.wrap{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+div.wrap .wrapInner{
+    width: 50%;
+    height: auto;
+    margin: 80px auto;
+    z-index: 1;
+}
+
+article.article{
+    margin-bottom: 120px;
+}
+
+article.article .articleTitle{
+    font-size: 26px;
+    font-weight: 400;
+    color: #555;
+    cursor: pointer;
+}
+
+article.article .articleRemark{
+    width: auto;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    text-indent: 1em;
+    color: #999;
+    margin: 25px 0;
+    border-left: 4px yellowgreen solid;
+}
+
+article.article .abstract{
+    font-size: 20px;
+    line-height: 1.8em;
+    text-align: justify;
+    color: #555;
+}
+
+/*footer*/
+footer.foot{
+    width: 30%;
+    margin:0 auto;
+    font-size: 40px;
+    color: #555;
+}
+
+footer.foot .page .pagePrevious{
+    float: left;
+}
+
+footer.foot .page .pageNext{
+    float: right;
+}
+
+footer.foot .foot_Bg{
+    width: 100%;
+    height: 100px;
+}
