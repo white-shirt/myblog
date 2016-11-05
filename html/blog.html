@@ -3,89 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>一件白衬衫的博客</title>
-    <link rel="stylesheet" type="text/css" href="../linkCss/css/font-awesome.min.css" />
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="../linkCss/css/font-awesome-ie7.min.css" /><![endif]-->
-    <link rel="stylesheet" type="text/css" href="../css/blogCss.css" />
+    <link rel="stylesheet" type="text/css" href="../linkCss/css/font-awesome.min.css"/>
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="../linkCss/css/font-awesome-ie7.min.css"/><![endif]-->
+    <link rel="stylesheet" type="text/css" href="../css/blog.css"/>
     <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="../js/blog.js"></script>
 </head>
 <body>
-    <!--页眉-->
-    <header class="header">
-        <div class="headerInner">
-            <!--headerLogo-->
-            <div class="logo"></div>
-            <p class="logoText">Do something Interesting.</p>
-            <!--header导航-->
-            <ul class="nav">
-                <li class="nav_list nav_list_last"><a href="#">个人简历</a></li>
-                <li class="nav_list"><a href="#">作品</a></li>
-                <li class="nav_list"><a href="#">博客</a></li>
-                <li class="nav_list"><a href="../index.html">首页</a></li>
-            </ul>
-        </div>
-    </header>
-    <!--图片滚动-->
-    <div class="banner">
-        <!--图片-->
-        <div class="bannerInner">
+<!--页眉-->
+<header class="header">
+    <div class="headerInner">
+        <!--headerLogo-->
+        <div class="logo"></div>
+        <p class="logoText">Do something Interesting.</p>
+        <!--header导航-->
+        <ul class="nav">
+            <li class="nav_list nav_list_last"><a href="#">个人简历</a></li>
+            <li class="nav_list"><a href="#">作品</a></li>
+            <li class="nav_list"><a href="#">博客</a></li>
+            <li class="nav_list"><a href="../index.html">首页</a></li>
+        </ul>
+    </div>
+</header>
+<!--图片滚动-->
+<div class="banner">
+    <!--图片-->
+    <div class="bannerInner">
+        <div class="bannerContent">
             <i class="fa fa-github-square"></i>
-            <div class="bannerContent">
-                <p class="bannerContentTitle" onclick="">Ows一件白衬衫的博客</p>
-                <p class="bannerContentText">关于这个博客，域名中的'chueng'是因为我喜欢张学友，'ows'是one-white-shirt的简写。<br>html、css、JavaScript、JQuery、mySQL</p>
-            </div>
+            <p class="bannerContentTitle" onclick="">Ows一件白衬衫的博客</p>
+            <p class="bannerContentText">关于这个博客，域名中的'chueng'是因为我喜欢张学友，'ows'是one-white-shirt的简写。<br>html、css、JavaScript、JQuery、mySQL</p>
         </div>
     </div>
-    <!--wrap-->
-    <div class="wrap">
-        <!--wrapInner-->
-        <div class="wrapInner">
-            <!--文章部分-->
-            <article class="article">
-                <!--文章标题-->
-                <div class="articleTitle" onclick="">
-                    HTML知识梳理(上)
-                </div>
-                <!--文章备注-->
-                <div class="articleRemark">
-                    <span>作者：一件白衬衫</span>
-                </div>
-                <!--文章摘要-->
-                <div class="abstract">
-                    <p>超级文本标记语言是标准通用标记语言下的一个应用，也是一种规范，一种标准，它通过标记符号来标记要显示的网页中的各个部分。
-                        网页文件本身是一种文本文件，通过在文本文件中添加标记符，可以告诉浏览器如何显示其中的内容。浏览器按顺序阅读网页文件，然后根据标记符解释和显示其标记的内容，对书写出错的标记将不指出其错误，
-                        且不停止其解释执行过程，编制者只能通过显示效果来分析出错原因和出错部位....</p>
-                </div>
-            </article>
-            <article class="article">
-                <div class="articleTitle" onclick="">
-                    HTML知识梳理(下)
-                </div>
-                <div class="articleRemark">
-                    <span>作者：一件白衬衫</span>
-                </div>
-                <div class="abstract">
-                    <p>HTML是用来描述网页的一种语言。</p>
-                    <p>- HTML 指的是超文本标记语言 (Hyper Text Markup Language)</p>
-                    <p>- HTML 不是一种编程语言，而是一种标记语言 (markup language)</p>
-                    <p>- 标记语言是一套标记标签 (markup tag)</p>
-                    <p>- HTML 使用标记标签来描述网页</p>
-                </div>
-            </article>
-        </div>
+</div>
+<!--wrap-->
+<div class="wrap">
+    <!--wrapInner-->
+    <div class="wrapInner">
+        <!--文章部分-->
     </div>
-    <!--foot-->
-    <footer class="foot">
-        <!--分页-->
-        <div class="page">
-            <div class="pagePrevious" id="pagePrevious" onclick="">
-                <i class="fa fa-angle-double-left"></i>
-            </div>
-            <div class="pageNext" id="pageNext" onclick="">
-                <i class="fa fa-angle-double-right"></i>
-            </div>
-        </div>
-        <div class="foot_Bg"></div>
-    </footer>
+    <div class="pagenation"></div>
+    <div id="arrowTopBtn">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+</div>
+<script type="text/javascript">
+    var nowPage = 1;
+    var totalPage = 4;
+    for (var i = 1; i < totalPage; i++) {
+        var isActive = "inactive";
+        if (i == nowPage) isActive = "active";
+        page = '<a class="' + isActive + '" onclick="getData(' + i + ')">' + i + "</a>";
+        $(".pagenation").append(page);
+    }
+    var $Num = $('.pagenation a');
+    $Num.click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+</script>
+<!--foot-->
+<footer class="foot">
+    <div class="foot_Bg"></div>
+</footer>
 </body>
 </html>
