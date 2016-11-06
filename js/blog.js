@@ -36,9 +36,8 @@ function getData(page) {
     })
 }
 getData(1);                                                                                                                             //第一页
-
 //回到顶部
-window.onload = function Top() {
+window.onload = function () {
     var obtn = document.getElementById("arrowTopBtn");                                                                                  //获取回到顶部按钮
     var timer = null;
     var ostop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -51,5 +50,17 @@ window.onload = function Top() {
                 clearInterval(timer);
             }
         }, 30);
+    };
+    var nowPage = 1;                                                                                                                    //页码
+    var totalPage = 4;
+    for (var i = 1; i < totalPage; i++) {
+        var isActive = "inactive";
+        if (i == nowPage) isActive = "active";
+        page = '<a class="' + isActive + '" onclick="getData(' + i + ')">' + i + "</a>";
+        $(".pagenation").append(page);
     }
+    var $Num = $('.pagenation a');
+    $Num.click(function () {                                                                                                            //页码背景
+        $(this).addClass('active').siblings().removeClass('active');
+    });
 };
