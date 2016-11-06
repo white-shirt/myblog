@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>一件白衬衫的博客</title>
     <link rel="stylesheet" type="text/css" href="../linkCss/css/font-awesome.min.css"/>
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="../linkCss/css/font-awesome-ie7.min.css"/><![endif]-->
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="../linkCss/css/font-awesome-ie7.min.css"/><![endif]-->
     <link rel="stylesheet" type="text/css" href="../css/blog.css"/>
     <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="../js/blog.js"></script>
@@ -29,8 +30,8 @@
 <div class="banner">
     <!--图片-->
     <div class="bannerInner">
-        <div class="bannerContent">
-            <i class="fa fa-github-square"></i>
+        <div class="bannerContent bannerContentPart1">
+            <a href="https://github.com/white-shirt" target="_blank"><i class="fa fa-github-square"></i></a>
             <p class="bannerContentTitle" onclick="">Ows一件白衬衫的博客</p>
             <p class="bannerContentText">关于这个博客，域名中的'chueng'是因为我喜欢张学友，'ows'是one-white-shirt的简写。<br>html、css、JavaScript、JQuery、mySQL</p>
         </div>
@@ -47,20 +48,6 @@
         <i class="fa fa-arrow-up"></i>
     </div>
 </div>
-<script type="text/javascript">
-    var nowPage = 1;
-    var totalPage = 4;
-    for (var i = 1; i < totalPage; i++) {
-        var isActive = "inactive";
-        if (i == nowPage) isActive = "active";
-        page = '<a class="' + isActive + '" onclick="getData(' + i + ')">' + i + "</a>";
-        $(".pagenation").append(page);
-    }
-    var $Num = $('.pagenation a');
-    $Num.click(function () {
-        $(this).addClass('active').siblings().removeClass('active');
-    });
-</script>
 <!--foot-->
 <footer class="foot">
     <div class="foot_Bg"></div>

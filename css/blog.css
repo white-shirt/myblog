@@ -111,12 +111,19 @@ div.banner .bannerInner{
     height: 200px;
     margin: 0 auto;
     text-align: center;
+    overflow: hidden;
 }
 
-div.banner .bannerInner .bannerContent .fa-github-square{
+div.banner .bannerInner .bannerContentPart1{
+    width: 800px;
+    height: 200px;
+}
+
+div.banner .bannerInner .bannerContent .fa{
     font-size: 40px;
     color: #fff;
     margin-top: 35px;
+    cursor: pointer;
 }
 
 div.banner .bannerInner .bannerContent{
