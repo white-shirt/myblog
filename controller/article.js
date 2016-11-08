@@ -3,7 +3,7 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
-    password: '',
+    password: 'zk19911111',
     database: 'cheung_ows_com'
 });
 connection.connect();                                                                                                                                       // 响应前端ajax请求
@@ -16,6 +16,8 @@ http.createServer(
         var returnJson;                                                                                                                                     // 将要返回给前端的json串
         var params = urllib.parse(req.url, true);
         var total;                                                                                                                                          // 文章总数
+
+console.log(params)
         switch (params.pathname) {
             case "/getArticle":                                                                                                                             // 如果url是/getArticle就从数据库查寻出结果并返回
                 var returnData = {
