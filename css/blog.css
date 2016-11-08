@@ -114,11 +114,6 @@ div.banner .bannerInner{
     overflow: hidden;
 }
 
-div.banner .bannerInner .bannerContentPart1{
-    width: 800px;
-    height: 200px;
-}
-
 div.banner .bannerInner .bannerContent .fa{
     font-size: 40px;
     color: #fff;
