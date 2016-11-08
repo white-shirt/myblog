@@ -204,6 +204,58 @@ div.abstract{
     color: #555;
 }
 
+div.articleContent{
+    font-size: 14px;
+}
+
+div.articleContent figure{
+    background: #eee;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 10px;
+    line-height: 1.6;
+    overflow: auto;
+    font-size: 0.9em;
+}
+
+div.articleContent blockquote{
+    margin: 10px 0;
+    padding: 0 15px;
+    color: #666;
+    border-left: 4px solid #ddd;
+    font-size: 14px;
+}
+
+div.articleContent p{
+    line-height: 2em;
+}
+
+div.articleContent img{
+    display: block;
+    margin: 20px auto;
+}
+
+div.articleContent ul li{
+    padding-left: 25px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+div.articleContent ul li ul{
+    padding-left: 20px;
+}
+
+div.articleContent h1{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+div.articleContent h2{
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
 div.articleBtn{
     margin-top: 50px;
     text-align: center;

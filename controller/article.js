@@ -7,7 +7,7 @@ var connection = mysql.createConnection({
     database: 'cheung_ows_com'
 });
 connection.connect();                                                                                                                                       // 响应前端ajax请求
-var pageSize = 10;                                                                                                                                          // 每个page大小是10
+var pageSize = 5;                                                                                                                                          // 每个page大小是10
 var http = require('http');
 var urllib = require('url');
 http.createServer(

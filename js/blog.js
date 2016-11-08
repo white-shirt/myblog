@@ -16,9 +16,9 @@ function getData(page) {
             for (var i in articles) {
                 var title = $('<div class="title"></div>').text(articles[i].title);
                 var articleRemark = $('<div class="articleRemark"></div>').text(articles[i].articleRemark);
-                var abstract = $('<div class="abstract"></div>').text(articles[i].abstract);
+                var abstract = $('<div class="abstract"></div>').html(articles[i].abstract);
                 var articleBtn = $('<div class="articleBtn"><a>展开/收起</a></div>');
-                var content = $('<div class="articleContent"></div>').text(articles[i].articleContent);
+                var content = $('<div class="articleContent"></div>').html(articles[i].articleContent);
                 $('.wrapInner').append(title, articleRemark, abstract, content, articleBtn);
             }
             $(".title").click(function () {                                                                                             //点击标题阅读全文
@@ -52,7 +52,7 @@ window.onload = function () {
         }, 30);
     };
     var nowPage = 1;                                                                                                                    //页码
-    var totalPage = 4;
+    var totalPage = 3;
     for (var i = 1; i < totalPage; i++) {
         var isActive = "inactive";
         if (i == nowPage) isActive = "active";
