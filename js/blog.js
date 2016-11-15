@@ -8,6 +8,7 @@ function getData(page) {
         type: 'get',                                                                                                                    // 请求的方式，get or post
         dataType: 'jsonp',                                                                                                              // 预期服务器返回的数据类型
         success: function (returnData) {                                                                                                // 后端返回成功后前端将会做的处理
+            $('.loading').css("display","none");
             $('.title,.articleRemark,.abstract,.articleBtn,.articleContent').remove();                                                  //移除旧文章
             setTimeout(function () {                                                                                                    //刷新页面时，回到最顶端
                 $(document).scrollTop(0);
@@ -32,6 +33,7 @@ function getData(page) {
         },
         error: function () {
             alert("异常！");
+
         }
     })
 }
