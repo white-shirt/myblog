@@ -24,4 +24,37 @@ div.logo{
 
 /*part 1*/
 
+div.part1{
+    display: none;
+}
 
+/*part 2*/
+div.part2 .p2Time{
+    display: none;
+}
+
+div.part2 .timeNote{
+    display: none;
+}
+
+/*part 3*/
+
+div.part3{
+    display: none;
+}
+
+/*nav btn*/
+div#btn{
+    display: none;
+}
+
+/*sidebar*/
+
+div.sidebar{
+    display: none;
+}
+
+/*sidebarBtn*/
+div.sidebarBtn{
+    display: none;
+}
