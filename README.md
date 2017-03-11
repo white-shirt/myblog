@@ -1,2 +1,2 @@
-# myblog
-个人博客，迭代中:)。
+* http://www.chueng-ows.com/index.html
+* 移动端兼容中......
