@@ -3,7 +3,7 @@
  */
 function getData(page) {
     $.ajax({
-        url: '/getArticle?callback=?',                                     // 请求的后端地址
+        url: '/getArticle?callback=?',                                                                                                  // 请求的后端地址
         data: {page: page},                                                                                                             // 请求的参数
         type: 'get',                                                                                                                    // 请求的方式，get or post
         dataType: 'jsonp',                                                                                                              // 预期服务器返回的数据类型

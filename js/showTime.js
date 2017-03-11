@@ -11,6 +11,9 @@ function showTime() {                                                           
     var timeArray = [month,date,hour,minutes,sec];                                  //将时间数组储存在变量中
     var timeList = document.getElementsByClassName("timeList");                     //获取显示时间的列表
     for(var i = 0;i < timeList.length;i++){                                         //for循环遍历用来显示时间的列表
+        if (timeArray[i] < 10) {
+            timeArray[i] = '0' + timeArray[i];
+        }
         timeList[i].innerHTML = timeArray[i];                                       //将时间数组内数据按顺序填到遍历出来的事件列表里
     }
 }
