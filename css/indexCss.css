@@ -32,7 +32,7 @@ div.logo{
     background-size: cover;
     z-index: 5;
     }
-p.logo_Text{
+.part1 p.logo_Text{
     font-family: "BankGothic Lt BT",sans-serif;
     font-size: 12px; color: #fff;
     position: fixed;
