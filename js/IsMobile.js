@@ -22,7 +22,7 @@ function IsMobile() {
 var flag = IsMobile();
 /*手机端*/
 if (!flag) {
-    window.location.href = "file:///D:/ows/mobile.html";
+    window.location.href = "http://www.chueng-ows.com/mobile.html";
 }else {
 /*pc端*/
 
