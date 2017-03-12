@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <title>一件白衬衫</title>
+    <meta name="description" content="Web前端基础">
+    <meta name="keywords" content="Web前端">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 0.5rem;
+            font-family: "Microsoft YaHei", sans-serif;
+            background: black;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .bg{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url("img/mobile-bg.png");
+            background-size: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .content{
+            width: 100%;
+            height: 10rem;
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .content .about{
+            color: #fff;
+            font-weight: 500;
+            position: relative;
+            top: 1rem;
+        }
+
+        .content .enter-blog a{
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            margin: 0 auto;
+            position: relative;
+            top: 2rem;
+            line-height: 3rem;
+            border-radius: 50%;
+            background: #ccc;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="bg">
+
+    </div>
+    <div class="content">
+        <div class="about">
+            <p>一件白衬衫，90后射手座普通男青年</p>
+            <p>爱设计、爱篮球、热爱互联网，喜欢敲击代码的感觉</p>
+            <p>相信编程是一门艺术</p>
+        </div>
+        <div class="enter-blog">
+            <a href="html/blog.html">Enter</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/MobileMain.js"></script>
+    <script type="text/javascript" src="js/mobileBackground.js"></script>
+</body>
+</html>

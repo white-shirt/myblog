@@ -20,7 +20,10 @@ function IsMobile() {
 
 /*true为PC端，false为手机端*/
 var flag = IsMobile();
+/*手机端*/
 if (!flag) {
-    $('*').remove();
-    alert('1111')
+    window.location.href = "file:///D:/ows/mobile.html";
+}else {
+/*pc端*/
+
 }

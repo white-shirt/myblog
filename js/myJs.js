@@ -1,6 +1,7 @@
 /**
  * Created by Administrator on 2016/10/22.
  */
+
 $(document).ready(function mousewheelfuc() {
     var index = 0;
     var $btnLi = $('#btn ul li');                                                                       //导航圆点

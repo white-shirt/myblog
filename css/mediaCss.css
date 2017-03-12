@@ -4,57 +4,7 @@ html{
     height: 100%;
 }
 
-/*logo*/
-div.logo{
-    position: fixed;
-    width: 80px; height: 80px;
-    top: 40px; left: 40px;
-    background: url("../img/logo.gif") center;
-    background-size: cover;
-    z-index: 5;
-}
-
-.part1 p.logo_Text{
-    font-family: "BankGothic Lt BT",sans-serif;
-    font-size: 22px; color: #fff;
-    position: fixed;
-    top: 100px; left: 85px;
-    z-index: 5;
-}
-
-/*part 1*/
-
-div.part1{
+body *{
     display: none;
 }
 
-/*part 2*/
-div.part2 .p2Time{
-    display: none;
-}
-
-div.part2 .timeNote{
-    display: none;
-}
-
-/*part 3*/
-
-div.part3{
-    display: none;
-}
-
-/*nav btn*/
-div#btn{
-    display: none;
-}
-
-/*sidebar*/
-
-div.sidebar{
-    display: none;
-}
-
-/*sidebarBtn*/
-div.sidebarBtn{
-    display: none;
-}
