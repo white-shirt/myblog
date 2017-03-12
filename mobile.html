@@ -25,12 +25,24 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            background: url("img/mobile-bg.png");
+            background: url("img/mobile-bg.png") no-repeat;
             background-size: 100%;
             top: 0;
             left: 0;
             z-index: 1;
         }
+        
+        .black-bg{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url("img/mobile-bg1.png") no-repeat;
+            background-size: 100%;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+        
         .content{
             width: 100%;
             height: 10rem;
@@ -63,9 +75,9 @@
     </style>
 </head>
 <body>
-    <div class="bg">
+    <div class="bg"></div>
+    <div class="black-bg"></div>
 
-    </div>
     <div class="content">
         <div class="about">
             <p>一件白衬衫，90后射手座普通男青年</p>

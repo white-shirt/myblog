@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobile.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mobile.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mobile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
+            <state relative-caret-position="305">
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -56,16 +56,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IsMobile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/IsMobile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -385,12 +375,12 @@
       <workItem from="1489155353650" duration="423000" />
       <workItem from="1475303236649" duration="23473000" />
       <workItem from="1489293102002" duration="1874000" />
-      <workItem from="1489298004258" duration="10034000" />
+      <workItem from="1489298004258" duration="12135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145785000" />
+    <option name="totallyTimeSpent" value="147886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -695,14 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -710,6 +692,14 @@
           <folding>
             <element signature="e#1304#1310#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/IsMobile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -721,10 +711,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/IsMobile.js">
+    <entry file="file://$PROJECT_DIR$/mobile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        <state relative-caret-position="305">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
           <folding />
         </state>
       </provider>
