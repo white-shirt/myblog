@@ -31,14 +31,14 @@
             left: 0;
             z-index: 1;
         }
-        
+
         .bg2{
             width: 100%;
             height: 38%;
             position: absolute;
-            bottom: 0;
             background: url("img/mobile-bg1.png") no-repeat;
             background-size: 100%;
+            bottom: 0;
             z-index: 2;
         }
 
@@ -57,7 +57,7 @@
         }
 
         .content .enter-blog{
-            margin-top: 1.2rem;
+            margin-top: 1.1rem;
         }
 
         .content .enter-blog a{
@@ -68,9 +68,35 @@
             line-height: 3rem;
             border-radius: 50%;
             background: #ccc;
+            box-shadow: 0 0 2rem #fff;
+            -webkit-box-shadow: 0 0 2rem #fff;
+            -webkit-animation: aBlink 2.5s ease-in-out infinite;
+            -moz-animation: aBlink 2.5s ease-in-out infinite;
+            -o-animation: aBlink 2.5s ease-in-out infinite;
         }
 
-
+        @-webkit-keyframes aBlink {
+            0%{
+                box-shadow: 0 0 0 #111;
+                -webkit-box-shadow: 0 0 0 #111;
+            }
+            25%{
+                box-shadow: 0 0 1rem #333;
+                -webkit-box-shadow: 0 0 1rem #555;
+            }
+            50%{
+                box-shadow: 0 0 2rem #fff;
+                -webkit-box-shadow: 0 0 2rem #fff;
+            }
+            75%{
+                box-shadow: 0 0 1rem #333;
+                -webkit-box-shadow: 0 0 1rem #555;
+            }
+            100%{
+                box-shadow: 0 0 0 #111;
+                -webkit-box-shadow: 0 0 0 #111;
+            }
+        }
     </style>
 </head>
 <body>
@@ -88,6 +114,7 @@
             <a href="html/blog.html">Enter</a>
         </div>
     </div>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="js/MobileMain.js"></script>
     <script type="text/javascript" src="js/mobileBackground.js"></script>
 </body>
