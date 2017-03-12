@@ -155,7 +155,7 @@ div.wrap{
 }
 
 div.wrap .wrapInner{
-    width: 50%;
+    width: 60%;
     height: auto;
     margin: 30px auto;
     z-index: 1;
@@ -163,10 +163,10 @@ div.wrap .wrapInner{
 
 div.title{
     display: inline-block;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 400;
     color: #555;
-    margin: 80px 0 10px;
+    margin: 5rem 0 0.625rem;
     cursor: pointer;
     position: relative;
 }
@@ -175,9 +175,9 @@ div.title:before{
     content: "";
     position: absolute;
     left: 50%;
-    bottom: -2px;
+    bottom: -0.125rem;
     width: 0;
-    height: 2px;
+    height: 0.125rem;
     background: #009392;
     transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -193,85 +193,85 @@ div.title:hover:before{
 
 div.articleRemark{
     width: auto;
-    height: 30px;
-    font-size: 12px;
-    line-height: 30px;
-    text-indent: 1em;
+    height: 1.875rem;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    text-indent: 1rem;
     color: #999;
-    margin: 15px 0 25px;
-    border-left: 4px #009392 solid;
+    margin: 0.9375rem 0 1.5625rem;
+    border-left: 0.25rem #009392 solid;
 }
 
 div.abstract{
     font-size: 20px;
-    line-height: 1.8em;
+    line-height: 1.8rem;
     text-align: justify;
     color: #555;
 }
 
 div.articleContent{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 div.articleContent figure{
     background: #eee;
-    margin: 1em 0;
-    padding: 1em;
-    border-radius: 10px;
-    line-height: 1.6;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    line-height: 1.6rem;
     overflow: auto;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 div.articleContent blockquote{
-    margin: 10px 0;
-    padding: 0 15px;
+    margin: 0.625rem 0;
+    padding: 0 0.9375rem;
     color: #666;
-    border-left: 4px solid #ddd;
-    font-size: 14px;
+    border-left: 0.25rem solid #ddd;
+    font-size: 0.875rem;
 }
 
 div.articleContent p{
-    line-height: 2em;
+    line-height: 2rem;
 }
 
 div.articleContent img{
     display: block;
-    margin: 20px auto;
+    margin: 1.25rem auto;
 }
 
 div.articleContent ul li{
-    padding-left: 25px;
-    margin: 10px 0;
-    font-size: 14px;
+    padding-left: 1.5625rem;
+    margin: 0.625rem 0;
+    font-size: 0.875rem;
 }
 
 div.articleContent ul li ul{
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 div.articleContent h1{
-    margin: 20px 0;
-    font-size: 20px;
+    margin: 1.25rem 0;
+    font-size: 1.25rem;
 }
 
 div.articleContent h2{
-    margin: 20px 0;
-    font-size: 16px;
+    margin: 1.25rem 0;
+    font-size: 1rem;
     font-weight: normal;
 }
 
 div.articleBtn{
-    margin-top: 50px;
+    margin-top: 3.125rem;
     text-align: center;
     display: block;
 }
 
 div.articleBtn a{
-    font-size: 15px;
-    padding: 5px 20px;
-    border: 2px #555 solid;
-    border-radius: 20px;
+    font-size: 0.9375rem;
+    padding: 0.3125rem 1.25rem;
+    border: 0.125rem #555 solid;
+    border-radius: 1.25rem;
     cursor: pointer;
     position: relative;
 }
@@ -283,24 +283,25 @@ div.articleBtn a:hover{
 }
 
 div.articleContent{
-    font-size: 20px;
-    line-height: 1.8em;
+    width: 60%;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
     text-align: justify;
     color: #555;
     display: none;
 }
 
 div.pagenation{
-    width: 200px;
-    margin: 100px auto;
+    width: 12.5rem;
+    margin: 6.25rem auto;
     text-align: center;
     }
 div.pagenation a{
     display: inline-block;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #555;
-    padding: 0 10px;
-    margin: 0 10px;
+    padding: 0 0.625rem;
+    margin: 0 0.625rem;
     cursor: pointer;
 }
 
@@ -310,12 +311,12 @@ div.pagenation .active{
 
 div#arrowTopBtn{
     position: fixed;
-    right: 50px;
-    bottom: 100px;
+    right: 3.125rem;
+    bottom: 6.25rem;
     cursor: pointer;
 }
 div#arrowTopBtn .fa-arrow-up{
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #555;
 }
 div#arrowTopBtn .fa-arrow-up:hover{
@@ -325,5 +326,5 @@ div#arrowTopBtn .fa-arrow-up:hover{
 /*footer*/
 footer.foot .foot_Bg{
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
 }
