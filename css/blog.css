@@ -283,7 +283,7 @@ div.articleBtn a:hover{
 }
 
 div.articleContent{
-    width: 60%;
+    width: 100%;
     font-size: 1.25rem;
     line-height: 1.8rem;
     text-align: justify;
