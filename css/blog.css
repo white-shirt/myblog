@@ -291,6 +291,11 @@ div.articleContent{
     display: none;
 }
 
+div.articleContent img{
+    width: 100%;
+    height: 100%;
+}
+
 div.pagenation{
     width: 12.5rem;
     margin: 6.25rem auto;
