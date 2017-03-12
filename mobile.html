@@ -6,116 +6,26 @@
     <title>一件白衬衫</title>
     <meta name="description" content="Web前端基础">
     <meta name="keywords" content="Web前端">
-    <meta name="viewport" content="width=device-width,user-scalable=no" />
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            font-size: 0.5rem;
-            font-family: "Microsoft YaHei", sans-serif;
-            background: black;
-        }
-        a{
-            text-decoration: none;
-            color: #fff;
-        }
-        .bg{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background: url("img/mobile-bg.png") no-repeat;
-            background-size: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-
-        .bg2{
-            width: 100%;
-            height: 38%;
-            position: absolute;
-            background: url("img/mobile-bg1.png") no-repeat;
-            background-size: 100%;
-            bottom: 0;
-            z-index: 2;
-        }
-
-        .content{
-            width: 100%;
-            height: 9rem;
-            position: absolute;
-            bottom: 0;
-            z-index: 3;
-            text-align: center;
-        }
-
-        .content .about{
-            color: #fff;
-            font-weight: 500;
-        }
-
-        .content .enter-blog{
-            margin-top: 1.1rem;
-        }
-
-        .content .enter-blog a{
-            display: inline-block;
-            width: 3rem;
-            height: 3rem;
-            margin: 0 auto;
-            line-height: 3rem;
-            border-radius: 50%;
-            background: #ccc;
-            box-shadow: 0 0 2rem #fff;
-            -webkit-box-shadow: 0 0 2rem #fff;
-            -webkit-animation: aBlink 2.5s ease-in-out infinite;
-            -moz-animation: aBlink 2.5s ease-in-out infinite;
-            -o-animation: aBlink 2.5s ease-in-out infinite;
-        }
-
-        @-webkit-keyframes aBlink {
-            0%{
-                box-shadow: 0 0 0 #111;
-                -webkit-box-shadow: 0 0 0 #111;
-            }
-            25%{
-                box-shadow: 0 0 1rem #333;
-                -webkit-box-shadow: 0 0 1rem #555;
-            }
-            50%{
-                box-shadow: 0 0 2rem #fff;
-                -webkit-box-shadow: 0 0 2rem #fff;
-            }
-            75%{
-                box-shadow: 0 0 1rem #333;
-                -webkit-box-shadow: 0 0 1rem #555;
-            }
-            100%{
-                box-shadow: 0 0 0 #111;
-                -webkit-box-shadow: 0 0 0 #111;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <link rel="stylesheet" href="css/mobileIndex.css">
 </head>
 <body>
-    <div class="bg"></div>
-    <div class="bg2"></div>
+<div class="bg"></div>
+<div class="bg2"></div>
 
-    <div class="content">
-        <div class="about">
-            <p>一件白衬衫</p>
-            <p>90后射手座普通男青年</p>
-            <p>爱设计、爱篮球,喜欢敲击代码的感觉</p>
-            <p>相信编程是一门艺术</p>
-        </div>
-        <div class="enter-blog">
-            <a href="html/blog.html">Enter</a>
-        </div>
+<div class="content">
+    <div class="about">
+        <p>一件白衬衫</p>
+        <p>90后射手座普通男青年</p>
+        <p>爱设计、爱篮球,喜欢敲击代码的感觉</p>
+        <p>相信编程是一门艺术</p>
     </div>
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="js/MobileMain.js"></script>
-    <script type="text/javascript" src="js/mobileBackground.js"></script>
+    <div class="enter-blog">
+        <a href="html/blog.html">Enter</a>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/MobileMain.js"></script>
+<script type="text/javascript" src="js/mobileBackground.js"></script>
 </body>
 </html>
