@@ -1,6 +1,9 @@
 /**
  * Created by oneWhitShirt on 2016/10/30.
  */
+
+var btnState = false;
+var titleScrollTop;
 function getData(page) {
     $.ajax({
         url: '/getArticle?callback=?',                                                                                                  // 请求的后端地址
@@ -8,7 +11,7 @@ function getData(page) {
         type: 'get',                                                                                                                    // 请求的方式，get or post
         dataType: 'jsonp',                                                                                                              // 预期服务器返回的数据类型
         success: function (returnData) {                                                                                                // 后端返回成功后前端将会做的处理
-            $('.loading').css("display","none");
+            $('.loading').css("display", "none");
             $('.title,.articleRemark,.abstract,.articleBtn,.articleContent').remove();                                                  //移除旧文章
             setTimeout(function () {                                                                                                    //刷新页面时，回到最顶端
                 $(document).scrollTop(0);
@@ -27,8 +30,17 @@ function getData(page) {
                 $(this).next().next().next(".articleContent").slideToggle(2000);                                                        //内容展开
             });
             $('.articleBtn').click(function () {
-                $(this).prev('.articleContent').slideToggle(2000);
-                $(this).prev().prev('.abstract').slideToggle(1000);
+                if (!btnState) {
+                    $(this).prev('.articleContent').slideToggle(2000);
+                    $(this).prev().prev('.abstract').slideToggle(1000);
+                    titleScrollTop = $(this).scrollTop();
+                    btnState = true;
+                } else if (btnState) {
+                    $(this).prev('.articleContent').slideToggle(2000);
+                    $(this).prev().prev('.abstract').slideToggle(1000);
+                    document.body.scrollTop = titleScrollTop;
+                    btnState = false;
+                }
             });
         },
         error: function () {
@@ -42,11 +54,10 @@ getData(1);                                                                     
 window.onload = function () {
     var obtn = document.getElementById("arrowTopBtn");                                                                                  //获取回到顶部按钮
     var timer = null;
-    var ostop = document.documentElement.scrollTop || document.body.scrollTop;
     obtn.onclick = function () {
         timer = setInterval(function () {
             var ostop = document.documentElement.scrollTop || document.body.scrollTop;                                                  // 获取滚动条距离顶部的高度
-            var ispeed = Math.floor(-ostop / 6);                                                                                          //向下取整，滚动条的速度。
+            var ispeed = Math.floor(-ostop / 6);                                                                                         //向下取整，滚动条的速度。
             document.documentElement.scrollTop = document.body.scrollTop = ostop + ispeed;                                              //滚动条距离顶部的高度
             if (ostop == 0) {
                 clearInterval(timer);

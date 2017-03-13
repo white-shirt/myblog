@@ -10,6 +10,7 @@ $(document).ready(function mousewheelfuc() {
     var $p2content = $('.part2 .p2Content');                                                            //第二屏滚动内容
     var $p2btn = $('.p2Time,.timeNote,.button');                                                        //第二屏滚动btn
     var $p3content = $('.part3 .p3content');                                                            //第三屏滚动内容
+    var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
     var Time = new Date();                                                                              //获取页面刷新时的时间
     setTimeout(function () {                                                                            //刷新页面时，回到最顶端
         $(document).scrollTop(0);
@@ -39,7 +40,7 @@ $(document).ready(function mousewheelfuc() {
 
     function move() {                                                                                   //滚动函数
         var winHeight = $(window).height();                                                             //获取window高度
-        $('body').animate({'scrollTop': index * winHeight + 'px'}, 800);                                //body滚动
+        $('body,html').animate({'scrollTop': index * winHeight + 'px'}, 800);                           //body滚动
     }
 
     function contentToggle() {                                                                          //滚动内容
