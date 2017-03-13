@@ -30,7 +30,7 @@ function getData(page) {
                 $(this).next().next().next(".articleContent").slideToggle(2000);                                                        //内容展开
             });
             $('.articleBtn').click(function () {
-                BtnScrollTop = $('this').scrollTop();
+                BtnScrollTop = $(this).scrollTop();
                 console.log(BtnScrollTop);
                 if (!btnState) {
                     $(this).prev('.articleContent').slideToggle(2000);
