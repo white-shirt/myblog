@@ -4,6 +4,7 @@
 
 var btnState = false;
 var titleScrollTop;
+var ostop = document.documentElement.scrollTop || document.body.scrollTop;
 function getData(page) {
     $.ajax({
         url: '/getArticle?callback=?',                                                                                                  // 请求的后端地址
@@ -38,7 +39,7 @@ function getData(page) {
                 } else if (btnState) {
                     $(this).prev('.articleContent').slideToggle(2000);
                     $(this).prev().prev('.abstract').slideToggle(1000);
-                    document.body.scrollTop = titleScrollTop;
+                    ostop = titleScrollTop;
                     btnState = false;
                 }
             });
