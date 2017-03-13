@@ -3,7 +3,7 @@
  */
 
 var btnState = false;
-var titleScrollTop;
+var BtnScrollTop;
 function getData(page) {
     $.ajax({
         url: '/getArticle?callback=?',                                                                                                  // 请求的后端地址
@@ -33,12 +33,12 @@ function getData(page) {
                 if (!btnState) {
                     $(this).prev('.articleContent').slideToggle(2000);
                     $(this).prev().prev('.abstract').slideToggle(1000);
-                    titleScrollTop = $(this).scrollTop();
+                    BtnScrollTop = document.body.scrollTop;
                     btnState = true;
                 } else if (btnState) {
                     $(this).prev('.articleContent').slideToggle(2000);
                     $(this).prev().prev('.abstract').slideToggle(1000);
-                    document.body.scrollTop = titleScrollTop;
+                    document.body.scrollTop = BtnScrollTop;
                     btnState = false;
                 }
             });
