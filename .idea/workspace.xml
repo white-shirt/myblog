@@ -79,11 +79,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
               <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/blog.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="294" column="16" selection-start-line="294" selection-start-column="16" selection-end-line="294" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -136,7 +146,6 @@
         <option value="$PROJECT_DIR$/js/mobile.js" />
         <option value="$PROJECT_DIR$/js/mobileBackground.js" />
         <option value="$PROJECT_DIR$/js/MobileMain.js" />
-        <option value="$PROJECT_DIR$/css/blog.css" />
         <option value="$PROJECT_DIR$/css/mobileIndex.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/IsMobile.js" />
@@ -144,6 +153,7 @@
         <option value="$PROJECT_DIR$/js/myJs.js" />
         <option value="$PROJECT_DIR$/js/blog.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/css/blog.css" />
       </list>
     </option>
   </component>
@@ -405,12 +415,12 @@
       <workItem from="1475303236649" duration="23473000" />
       <workItem from="1489293102002" duration="1874000" />
       <workItem from="1489298004258" duration="23552000" />
-      <workItem from="1489400422927" duration="5295000" />
+      <workItem from="1489400422927" duration="5916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164598000" />
+    <option name="totallyTimeSpent" value="165219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -666,14 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="287" column="24" selection-start-line="287" selection-start-column="24" selection-end-line="287" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
@@ -746,6 +748,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="294" column="16" selection-start-line="294" selection-start-column="16" selection-end-line="294" selection-end-column="16" />
           <folding />
         </state>
       </provider>
