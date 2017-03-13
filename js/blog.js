@@ -30,11 +30,11 @@ function getData(page) {
                 $(this).next().next().next(".articleContent").slideToggle(2000);                                                        //内容展开
             });
             $('.articleBtn').click(function () {
+                titleScrollTop = $(this).scrollTop();
+                console.log(titleScrollTop);
                 if (!btnState) {
                     $(this).prev('.articleContent').slideToggle(2000);
                     $(this).prev().prev('.abstract').slideToggle(1000);
-                    titleScrollTop = $(this).scrollTop();
-                    console.log(titleScrollTop);
                     btnState = true;
                 } else if (btnState) {
                     $(this).prev('.articleContent').slideToggle(2000);
