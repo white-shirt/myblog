@@ -39,7 +39,6 @@ function getData(page) {
                     $(this).prev('.articleContent').slideToggle(2000);
                     $(this).prev().prev('.abstract').slideToggle(1000);
                     document.body.scrollTop = titleScrollTop;
-                    document.documentElement.scrollTop = titleScrollTop;
                     btnState = false;
                 }
             });

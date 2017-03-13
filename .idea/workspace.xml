@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/js/blog.js" description="tle = $('&lt;div class=&quot;title&quot;&gt;&lt;/div&gt;').text(articles..." line="46" />
+    <bookmark url="file://$PROJECT_DIR$/js/blog.js" description="tle = $('&lt;div class=&quot;title&quot;&gt;&lt;/div&gt;').text(articles..." line="45" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c7a5ca-b173-4d63-98bd-abb60ac6568c" name="Default" comment="" />
@@ -32,8 +32,8 @@
       <file leaf-file-name="blog.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+            <state relative-caret-position="575">
+              <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -395,12 +395,12 @@
       <workItem from="1475303236649" duration="23473000" />
       <workItem from="1489293102002" duration="1874000" />
       <workItem from="1489298004258" duration="23552000" />
-      <workItem from="1489400422927" duration="2193000" />
+      <workItem from="1489400422927" duration="2447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161496000" />
+    <option name="totallyTimeSpent" value="161750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -733,8 +733,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="575">
+          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
           <folding />
         </state>
       </provider>
