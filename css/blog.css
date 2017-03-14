@@ -5,10 +5,10 @@
 
 body {
     font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
-    -moz-user-select:none;/*火狐*/
-    -webkit-user-select:none;/*webkit浏览器*/
-    -ms-user-select:none;/*IE10*/
-    user-select:none;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    user-select: none;
     position: relative;
 }
 
@@ -20,12 +20,12 @@ a {
     text-decoration: none;
 }
 
-div.loading{
+div.loading {
     text-align: center;
     margin-top: 50px;
 }
 
-div.loading p{
+div.loading p {
     text-align: center;
     margin-left: 20px;
 }
@@ -43,14 +43,14 @@ div.loading p{
     z-index: 5;
 }
 
-.header .headerInner{
+.header .headerInner {
     width: 60%;
     height: 100%;
     margin: 0 auto;
     position: relative;
 }
 
-.header .headerInner .logo{
+.header .headerInner .logo {
     width: 45px;
     height: 45px;
     position: absolute;
@@ -59,7 +59,7 @@ div.loading p{
     background: url("../img/logo.gif") center;
 }
 
-.header .headerInner .logoText{
+.header .headerInner .logoText {
     font-family: "BankGothic Lt BT", sans-serif;
     font-size: 12px;
     color: #333;
@@ -68,21 +68,21 @@ div.loading p{
     bottom: 7px;
 }
 
-.header .headerInner .nav_list{
+.header .headerInner .nav_list {
     display: inline-block;
     line-height: 60px;
     float: right;
     position: relative;
 }
 
-.header .headerInner .nav_list a{
+.header .headerInner .nav_list a {
     display: block;
     font-size: 15px;
     color: #333;
     padding: 0 30px;
 }
 
-.header .headerInner .nav_list a:before{
+.header .headerInner .nav_list a:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -95,7 +95,7 @@ div.loading p{
     -o-transition: ease 0.4s;
 }
 
-.header .headerInner .nav_list a:hover:before{
+.header .headerInner .nav_list a:hover:before {
     color: black;
     width: 100%;
     left: 0;
@@ -104,9 +104,8 @@ div.loading p{
     filter: Alpha(opacity=60);
 }
 
-
 /*图片滚动部分*/
-div.banner{
+div.banner {
     display: block;
     width: 100%;
     height: 200px;
@@ -116,7 +115,7 @@ div.banner{
     margin-top: 60px;
 }
 
-div.banner .bannerInner{
+div.banner .bannerInner {
     width: 60%;
     height: 200px;
     margin: 0 auto;
@@ -124,44 +123,44 @@ div.banner .bannerInner{
     overflow: hidden;
 }
 
-div.banner .bannerInner .bannerContent .fa{
+div.banner .bannerInner .bannerContent .fa {
     font-size: 40px;
     color: #fff;
     margin-top: 35px;
     cursor: pointer;
 }
 
-div.banner .bannerInner .bannerContent{
+div.banner .bannerInner .bannerContent {
     display: inline-block;
 }
 
-div.banner .bannerInner .bannerContent .bannerContentTitle{
+div.banner .bannerInner .bannerContent .bannerContentTitle {
     font-size: 20px;
     color: #eaeaea;
     margin-top: 10px;
 }
 
-div.banner .bannerInner .bannerContent .bannerContentText{
+div.banner .bannerInner .bannerContent .bannerContentText {
     font-size: 14px;
     color: #777;
     margin-top: 10px;
 }
 
 /*wrap*/
-div.wrap{
+div.wrap {
     width: 100%;
     height: auto;
     position: relative;
 }
 
-div.wrap .wrapInner{
+div.wrap .wrapInner {
     width: 60%;
     height: auto;
     margin: 30px auto;
     z-index: 1;
 }
 
-div.title{
+div.title {
     display: inline-block;
     font-size: 1.625rem;
     font-weight: 400;
@@ -171,7 +170,7 @@ div.title{
     position: relative;
 }
 
-div.title:before{
+div.title:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -185,13 +184,13 @@ div.title:before{
     -o-transition: all 0.3s;
 }
 
-div.title:hover:before{
+div.title:hover:before {
     width: 100%;
     left: 0;
     right: 0;
 }
 
-div.articleRemark{
+div.articleRemark {
     width: auto;
     height: 1.875rem;
     font-size: 0.75rem;
@@ -202,18 +201,18 @@ div.articleRemark{
     border-left: 0.25rem #009392 solid;
 }
 
-div.abstract{
+div.abstract {
     font-size: 20px;
     line-height: 1.8rem;
     text-align: justify;
     color: #555;
 }
 
-div.articleContent{
+div.articleContent {
     font-size: 0.875rem;
 }
 
-div.articleContent figure{
+div.articleContent figure {
     background: #eee;
     margin: 1rem 0;
     padding: 1rem;
@@ -223,7 +222,7 @@ div.articleContent figure{
     font-size: 0.9rem;
 }
 
-div.articleContent blockquote{
+div.articleContent blockquote {
     margin: 0.625rem 0;
     padding: 0 0.9375rem;
     color: #666;
@@ -231,43 +230,43 @@ div.articleContent blockquote{
     font-size: 0.875rem;
 }
 
-div.articleContent p{
+div.articleContent p {
     line-height: 2rem;
 }
 
-div.articleContent img{
+div.articleContent img {
     display: block;
     margin: 1.25rem auto;
 }
 
-div.articleContent ul li{
+div.articleContent ul li {
     padding-left: 1.5625rem;
     margin: 0.625rem 0;
     font-size: 0.875rem;
 }
 
-div.articleContent ul li ul{
+div.articleContent ul li ul {
     padding-left: 1.25rem;
 }
 
-div.articleContent h1{
+div.articleContent h1 {
     margin: 1.25rem 0;
     font-size: 1.25rem;
 }
 
-div.articleContent h2{
+div.articleContent h2 {
     margin: 1.25rem 0;
     font-size: 1rem;
     font-weight: normal;
 }
 
-div.articleBtn{
+div.articleBtn {
     margin-top: 3.125rem;
     text-align: center;
     display: block;
 }
 
-div.articleBtn a{
+div.articleBtn a {
     font-size: 0.9375rem;
     padding: 0.3125rem 1.25rem;
     border: 0.125rem #555 solid;
@@ -276,13 +275,13 @@ div.articleBtn a{
     position: relative;
 }
 
-div.articleBtn a:hover{
+div.articleBtn a:hover {
     border-color: #009392;
     color: #009392;
     transition: all 0.5s;
 }
 
-div.articleContent{
+div.articleContent {
     width: 100%;
     font-size: 1.25rem;
     line-height: 1.8rem;
@@ -291,16 +290,17 @@ div.articleContent{
     display: none;
 }
 
-div.articleContent img{
+div.articleContent img {
     width: 100%;
 }
 
-div.pagenation{
+div.pagenation {
     width: 12.5rem;
     margin: 6.25rem auto;
     text-align: center;
-    }
-div.pagenation a{
+}
+
+div.pagenation a {
     display: inline-block;
     font-size: 1.5625rem;
     color: #555;
@@ -309,26 +309,28 @@ div.pagenation a{
     cursor: pointer;
 }
 
-div.pagenation .active{
+div.pagenation .active {
     background: #009392;
 }
 
-div#arrowTopBtn{
+div#arrowTopBtn {
     position: fixed;
     right: 3.125rem;
     bottom: 6.25rem;
     cursor: pointer;
 }
-div#arrowTopBtn .fa-arrow-up{
+
+div#arrowTopBtn .fa-arrow-up {
     font-size: 1.5625rem;
     color: #555;
 }
-div#arrowTopBtn .fa-arrow-up:hover{
+
+div#arrowTopBtn .fa-arrow-up:hover {
     color: #009392;
 }
 
 /*footer*/
-footer.foot .foot_Bg{
+footer.foot .foot_Bg {
     width: 100%;
     height: 6.25rem;
 }
