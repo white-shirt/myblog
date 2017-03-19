@@ -1,155 +1,35 @@
 [我的博客](http://www.chueng-ows.com/index.html)
-移动端兼容中......
 
+个人博客
+=========================
+项目结构
+-------------------------
+1..idea
+*存放WebStorm项目的配置信息，包括历史记录，版本控制信息等。
+2.controller
+*后端服务
+    *article.js  //建立mysql链接
+3.css
+*css样式表
+    *blog.css          //blog内容页样式表
+    *index.css         //首页样式表
+    *mobileIndex.css   //移动端首页额样式表
+4.html
+    *blog.html         //blog内容页
+5.img
+*项目图片文件
+6.js
+*JavaScript文件
+    *blog.js           //取后端数据
+    *IsMobile.js       //判断是否为移动端
+    *myJs.js           //web端首页
+7.linkCss
+*CSS图标引入
+8.node_modules         //node.js模块
+9.index.html           //启动页
+10.mobile.html         //移动端启动页
+11.package.json        //项目依赖
 ```javascript
-/*判断客户端是PC还是移动端*/
-function IsMobile() {
-    var userAgentInfo = navigator.userAgent;
-    var Agents = ["Android", "iPhone",
-        "SymbianOS", "Windows Phone",
-        "iPad", "iPod"];
-    var flag = true;
-    for (var i = 0; i < Agents.length; i++) {
-        if (userAgentInfo.indexOf(Agents[i]) > 0) {
-            flag = false;
-            break;
-        }
-    }
-    return flag;
-}
-
-/*true为PC端，false为手机端*/
-var flag = IsMobile();
-/*手机端*/
-if (!flag) {
-    window.location.href = "http://www.chueng-ows.com/mobile.html";
-} else {
-    /*pc端*/
-
-}
+npm install
 ```
-
-```javascript
-var can = document.getElementById('canClock');
-var winWidth = window.screen.width;
-var canWidth = can.width = winWidth * 0.6;
-var canHeight = can.height = canWidth;
-var ctx = can.getContext('2d');
-var r = canWidth / 2;
-
-/*圆*/
-function drawBackground() {
-    ctx.save();
-    ctx.translate(r, r);
-    ctx.beginPath();
-    ctx.lineWidth = 6;
-    ctx.arc(0, 0, r - 3, 0, 2 * Math.PI, false);
-    ctx.strokeStyle = '#fff';
-    ctx.stroke();
-
-    /*数字*/
-    var hourNum = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2];
-    ctx.font = '12px Arial';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    hourNum.forEach(function (number, i) {
-        var rad = 2 * Math.PI / 12 * i;
-        var x = Math.cos(rad) * (r - 35);
-        var y = Math.sin(rad) * (r - 35);
-        ctx.fillStyle = '#fff';
-        ctx.fillText(hourNum[i], x, y);
-    });
-
-    /*小圆点*/
-    for (var i = 0; i < 60; i++) {
-        var rad = 2 * Math.PI / 60 * i;
-        var x = Math.cos(rad) * (r - 18);
-        var y = Math.sin(rad) * (r - 18);
-        ctx.beginPath();
-        if (i % 5 === 0) {
-            ctx.fillStyle = '#fff';
-            ctx.arc(x, y, 3, 0, 2 * Math.PI, false);
-        } else {
-            ctx.fillStyle = '#666';
-            ctx.arc(x, y, 3, 0, 2 * Math.PI, false);
-        }
-        ctx.fill();
-    }
-}
-
-/*绘制时针*/
-
-function drawHour(hour, minutes) {
-    ctx.save();
-    ctx.beginPath();
-    var rad = 2 * Math.PI / 12 * hour;
-    var mrad = 2 * Math.PI / 12 / 60 * minutes;
-    ctx.rotate(rad + mrad);
-    ctx.lineWidth = 5;
-    ctx.lineCap = 'round';
-    ctx.moveTo(0, 5);
-    ctx.lineTo(0, -r / 2 + 5);
-    ctx.stroke();
-    ctx.restore();
-}
-
-/*绘制分针*/
-
-function drawMinute(minutes) {
-    ctx.save();
-    ctx.beginPath();
-    var rad = 2 * Math.PI / 60 * minutes;
-    ctx.rotate(rad);
-    ctx.lineWidth = 3;
-    ctx.lineCap = 'round';
-    ctx.moveTo(0, 5);
-    ctx.lineTo(0, -r / 2 - 8);
-    ctx.stroke();
-    ctx.restore();
-}
-
-/*绘制秒针*/
-
-function drawSecond(second) {
-    ctx.save();
-    ctx.beginPath();
-    var rad = 2 * Math.PI / 60 * second;
-    ctx.rotate(rad);
-    ctx.lineWidth = 2;
-    ctx.lineCap = 'round';
-    ctx.moveTo(0, 10);
-    ctx.lineTo(0, -r / 2 - 30);
-    ctx.strokeStyle = 'red';
-    ctx.stroke();
-    ctx.restore();
-}
-
-/*绘制圆点*/
-
-function drawPoint() {
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc(0, 0, 2, 0, 2 * Math.PI, false);
-    ctx.fillStyle = "#111";
-    ctx.fill();
-    ctx.restore();
-}
-
-/*动态*/
-
-function draw() {
-    ctx.clearRect(0, 0, canWidth, canWidth);
-    var now = new Date();
-    var hour = now.getHours();
-    var minute = now.getMinutes();
-    var second = now.getSeconds();
-    drawBackground();
-    drawHour(hour, minute);
-    drawMinute(minute);
-    drawSecond(second);
-    drawPoint();
-    ctx.restore();
-}
-draw();
-setInterval(draw, 1000);
-```
+12.README.MD           //项目介绍

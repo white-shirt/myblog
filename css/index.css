@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+li{
+    list-style: none;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+a{
+    text-decoration: none; font-family: "Microsoft YaHei", sans-serif;
+    }
+html{
+    overflow: hidden;
+}
+html,body{
+    height: 100%; position: relative;
+    }
+div.mask{
+    width: 100%; height: 100%;
+    background: #000 center;
+    position: absolute;
+    left: 0; top: 0;
+    opacity: 0.8; filter:Alpha(opacity=80);
+    z-index: 1;
+    }
+
+div.logo{
+    position: fixed;
+    width: 45px; height: 45px;
+    top: 40px; left: 40px;
+    background: url("../img/logo.gif") center;
+    background-size: cover;
+    z-index: 5;
+    }
+p.logo_Text{
+    font-family: "BankGothic Lt BT",sans-serif;
+    font-size: 12px; color: #fff;
+    position: fixed;
+    top: 73px; left: 60px;
+    z-index: 5;
+    }
+div.part{
+    width: 100%;
+    height: 100%;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    user-select:none;
+    }
+/*part1*/
+div.part1{
+    background: url("../img/1.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+div.part1 .content1,.content2{
+    width: 500px; height: 40px;
+    font-family: "Calibri",sans-serif;
+    font-size: 30px; font-weight: 100; color: #fff;
+    text-align: center; line-height: 40px;
+    position: absolute;
+    left: 50%;  top: 50%;
+    margin-left: -250px;
+    }
+div.part1 .content1{
+    margin-top: -450px;
+    opacity: 0;
+    filter:Alpha(opacity=0);
+    }
+div.part1 .content2{
+    margin-top: -400px;
+    opacity: 0;
+    filter:Alpha(opacity=0);
+    }
+/*part2*/
+div.part2{
+    background: url("../img/2-1.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+div.part2 .p2Content{
+    width: 600px; height: 80px;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 15px; color: #fff; letter-spacing: 0.1em;
+    text-align: center; line-height: 1.5em;
+    position: absolute; top: 300px; right: -100px;
+    opacity: 0; filter:Alpha(opacity=0);
+    }
+div.part2 .p2Content .p2Title{
+    font-family: "Calibri",sans-serif; font-size: 30px;
+    margin-bottom: 20px;
+    }
+div.part2 .p2Time{
+    width: 280px; height: 50px;
+    text-align: center;
+    position: absolute; top: 420px; right: -150px;
+    opacity: 0; filter:Alpha(opacity=0);
+    }
+div.part2 .p2Time .timeList{
+    display: inline-block;
+    width: 42px; height: 45px; border-radius: 15px;
+    font-size: 20px; color: #333; font-weight: bold;
+    text-align: center; line-height: 45px;
+    background: url("../img/2-2.jpg") center;
+    }
+div.part2 .timeNote{
+    width: 280px; height: 30px;
+    text-align: center; line-height: 30px;
+    position: absolute; top: 470px; right: -250px;
+    opacity: 0; filter:Alpha(opacity=0);
+    }
+div.part2 .timeNote ul li{
+    width: 42px; height: 30px;
+    display: inline-block;
+    font-size: 12px; color: #999;
+    }
+div.part2 .button{
+    width: 280px; height: 50px;
+    text-align: center; line-height: 50px;
+    position: absolute; top: 520px; right: -350px;
+    opacity: 0; filter:Alpha(opacity=0);
+    }
+div.part2 .button a{
+    font-size: 15px; color: #666;
+    padding: 6px 40px;
+    border: 2px #666 solid; border-radius: 20px;
+    }
+div.part2 .button a:hover{
+    color: #fff; border-color: #fff;
+    }
+/*part3*/
+div.part3{
+    background: url("../img/3-1.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+div.part3 .p3content{
+    width: 304px; height: 180px;
+    background: url("../img/3-6.gif") center no-repeat;
+    background-size: cover;
+    position: absolute; left: -300px; top: 50%; margin-top: -90px;
+    }
+/*div.part3 .clickbtn{
+    width: 20px; height: 20px;
+    background: #fff;
+    border: 3px green solid; border-radius: 20px;
+    position: absolute; bottom: 60px; left: 50%; margin-left: -13px;
+    cursor: pointer;
+    }*/
+/*div.part3 .changepic{
+    font-size: 10px; color: #555; font-family: "Microsoft YaHei", sans-serif;
+    text-align: center;
+    width: 100px; height: 30px; line-height: 40px;
+    position: absolute; left: 50%; bottom: 20px; margin-left: -50px;
+    background: url("../img/3-changepic.gif") center;
+    }*/
+/*btn*/
+#btn{
+    width: 20px; height: 150px;
+    position: fixed;
+    top: 50%; right: 45px;
+    margin-top: -75px;
+    }
+#btn ul li{
+    width: 10px; height: 10px;
+    border: 2px #888 solid;
+    border-radius: 10px;
+    margin: 50px 0;
+    cursor: pointer;
+    }
+#btn ul li.on{
+    border-color: #fff;
+    background: #6bc30d;
+    }
+/*sidebar*/
+div.sidebar{
+    position: fixed;
+    right: -520px; top: 0;
+    background: center;
+    background-size: cover;
+    opacity: 0; filter:Alpha(opacity=0);
+    z-index: 2;
+    }
+div.sidebar .sidebar_content{
+    position: fixed; top: 50%; margin-top: -160px;
+    right: -490px;
+    display: block;
+    }
+div.sidebar .sidebar_content .sidebar_content_list a{
+    display:block; margin-top: 20px;
+    font-size: 20px; color: #666;
+    text-align: right;
+    }
+div.sidebar .sidebar_content .sidebar_content_list a:hover{
+    color: #6bc30d; text-decoration: overline;
+    }
+div.sidebar .sidebar_bg{
+    width: 185px; height: 50px;
+    position: fixed; right: -490px; bottom: 40px;
+    background: url("../img/sidebar_bg.gif") center;
+    background-size: cover;
+    }
+div.sidebarBtn{
+    position: fixed; top: 40px; right: 30px;
+    width: 40px; height: 40px;
+    border: 2px #ccc solid; border-radius: 40px; background: #ccc;
+    cursor: pointer;
+    z-index: 3;
+    }
+div.sidebarBtn:hover{
+    background: #6bc30d; border-color: #6bc30d;
+    }
+div.sidebarBtn .Btn{
+    position: absolute;
+    left: 50%; top: 50%;
+    margin-left: -12px; margin-top: -7px;
+    z-index: 4;
+    }
+div.sidebarBtn .Btn .Btn_line{
+    width: 24px; height: 2px;
+    margin-top: 4px;
+    background: #fff;
+    display: block;
+    }
+div.sidebarBtn .Btn .Btn_top_clockwise{
+    -webkit-animation-name: Btc;
+    animation-name: Btc;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    }
+@keyframes Btc {
+    from{
+    }
+    to{
+        -webkit-transform: translateY(6px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
+    }
+    }
+@-webkit-keyframes Btc {
+    from{
+    }
+    to{
+        -webkit-transform: translateY(6px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
+    }
+    }
+div.sidebarBtn .Btn .Btn_mid_hide{
+    -webkit-animation-name: Bmh;
+    animation-name: Bmh;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    }
+@keyframes Bmh {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+    }
+@-webkit-keyframes Bmh {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+    }
+div.sidebarBtn .Btn .Btn_bottom_anticlockwise{
+    -webkit-animation-name: Bba;
+    animation-name: Bba;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    }
+@keyframes Bba {
+    from{
+    }
+    to{
+        -webkit-transform: translateY(-6px) rotate(-45deg);
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    }
+@-webkit-keyframes Bba {
+    from{
+    }
+    to{
+        -webkit-transform: translateY(-6px) rotate(-45deg);
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    }
+div.sidebarBtn .Btn .Btn_top_anticlockwise{
+    -webkit-animation-name: Bta;
+    animation-name: Bta;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    }
+@keyframes Bta {
+    from{
+        -webkit-transform: translateY(6px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
+    }
+    to{
+        -webkit-transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);
+    }
+    }
+@-webkit-keyframes Bta {
+    from{
+        -webkit-transform: translateY(6px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
+    }
+    to{
+        -webkit-transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);
+    }
+    }
+div.sidebarBtn .Btn .Btn_mid_show{
+    -webkit-animation-name: Bms;
+    animation-name: Bms;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    }
+@keyframes Bms {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    }
+@-webkit-keyframes Bms {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    }
+div.sidebarBtn .Btn .Btn_bottom_clockwise{
+    -webkit-animation-name: Bbc;
+    animation-name: Bbc;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    }
+@keyframes Bbc {
+    from{
+        -webkit-transform: translateY(-6px) rotate(-45deg);
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    to{
+        -webkit-transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);
+    }
+    }
+@-webkit-keyframes Bbc {
+    from{
+        -webkit-transform: translateY(-6px) rotate(-45deg);
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    to{
+        -webkit-transform: translateY(0px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);
+    }
+    }
