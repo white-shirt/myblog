@@ -2,9 +2,7 @@
  * Created by Administrator on 2017/3/14.
  */
 var can = document.getElementById('canClock');
-var winWidth = window.screen.width;
-var canWidth = can.width = winWidth * 0.6;
-var canHeight = can.height = canWidth;
+var canWidth = can.width;
 var ctx = can.getContext('2d');
 var r = canWidth / 2;
 

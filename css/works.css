@@ -19,6 +19,7 @@ div.wrap .wrap-inner {
 
 div.wrap .wrap-inner li{
     list-style: disc;
+    padding: 10px 0;
     cursor: pointer;
 }
 

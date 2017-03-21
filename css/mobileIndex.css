@@ -95,7 +95,9 @@ a {
 #canClock {
     display: inline-block;
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -130px;
     z-index: 2;
 }
