@@ -70,15 +70,17 @@ a {
     font-size: 15px;
     color: #333;
     padding: 0 30px;
+    z-index: 10;
 }
 
-.header .headerInner .nav_list a:before {
+.header .headerInner .nav_list a::before {
     content: "";
     position: absolute;
     left: 50%;
     width: 0;
     height: 60px;
     background: #009392;
+    z-index: 7;
     transition: ease 0.4s;
     -moz-transition: ease 0.4s;
     -webkit-transition: ease 0.4s;
@@ -92,6 +94,7 @@ a {
     right: 0;
     opacity: 0.6;
     filter: Alpha(opacity=60);
+    z-index: 7;
 }
 
 /*图片滚动部分*/
