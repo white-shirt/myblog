@@ -23,6 +23,12 @@ div.wrap .wrapInner {
     z-index: 1;
 }
 
+div.wrap .wrapInner .articleWrap{
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+}
+
 div.title {
     display: inline-block;
     font-size: 1.625rem;
@@ -65,7 +71,7 @@ div.articleRemark {
 }
 
 div.abstract {
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 1.8rem;
     text-align: justify;
     color: #555;

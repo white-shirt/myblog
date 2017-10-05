@@ -19,11 +19,14 @@ function getData(page) {
             var articles = returnData.articles;                                                                                         //后台返回文章
             for (var i in articles) {
                 var title = $('<div class="title"></div>').text(articles[i].title);
+                console.log(title);
                 var articleRemark = $('<div class="articleRemark"></div>').text(articles[i].articleRemark);
                 var abstract = $('<div class="abstract"></div>').html(articles[i].abstract);
                 var articleBtn = $('<div class="articleBtn"><a>展开/收起</a></div>');
-                var content = $('<div class="articleContent"></div>').html(articles[i].articleContent);
-                $('.wrapInner').append(title, articleRemark, abstract, content, articleBtn);
+                var content = $('<div class="articleContent"></div>').html(articles[i].articleContent); 
+                var articleWrap = $('<div class="articleWrap"></div>');
+                articleWrap.append(title, articleRemark, abstract, content, articleBtn); 
+                $('.wrapInner').append(articleWrap);      
             }
             $(".title").click(function () {                                                                                             //点击标题阅读全文
                 $(this).next().next(".abstract").slideToggle(1000);                                                                     //文章摘要收起
