@@ -29,7 +29,11 @@
 9. `index.html`           //启动页<br>
 10. `mobile.html`         //移动端启动页<br>
 11. `package.json`        //项目依赖<br>
+
 ```javascript
 npm install
 ```
+
 12. `README.MD`           //项目介绍
+
+
