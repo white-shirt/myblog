@@ -101,7 +101,7 @@ a {
 div.banner {
     display: block;
     width: 100%;
-    height: 200px;
+    height: 150px;
     background: url("../img/banner_bg.gif") center;
     background-size: cover;
     z-index: 1;
@@ -110,7 +110,7 @@ div.banner {
 
 div.banner .bannerInner {
     width: 60%;
-    height: 200px;
+    height: 150px;
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
@@ -119,7 +119,7 @@ div.banner .bannerInner {
 div.banner .bannerInner .bannerContent .fa {
     font-size: 40px;
     color: #fff;
-    margin-top: 35px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
