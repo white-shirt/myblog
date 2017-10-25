@@ -79,7 +79,7 @@ a {
     left: 50%;
     width: 0;
     height: 60px;
-    background: #009392;
+    background: deepskyblue;
     z-index: 7;
     transition: ease 0.4s;
     -moz-transition: ease 0.4s;

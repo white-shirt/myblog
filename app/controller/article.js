@@ -19,8 +19,8 @@ http.createServer(
         var returnJson;                                                                                                                                     // 将要返回给前端的json串
         var params = urllib.parse(req.url, true);
         var total;                                                                                                                                          // 文章总数
+        res.writeHead(200, {'Content-Type': 'application/json;charset=utf-8'});
 
-        console.log(params)
         switch (params.pathname) {
             case "/getArticle":                                                                                                                             // 如果url是/getArticle就从数据库查寻出结果并返回
                 var returnData = {
@@ -28,7 +28,6 @@ http.createServer(
                     articles: null,                                                                                                                         // 文章总数
                     nowPage: params.query.page                                                                                                              // 当前页号,随url传过来
                 };
-                res.writeHead(200, { 'Content-Type': 'application/json;charset=utf-8' });
                 var sql = "select count(*) count from article";                                                                                             //从mysql查询总数
                 connection.query(sql, function (err, rows, fields) {                                                                                        // connection。mysql连接
                     if (err) throw err;
@@ -44,6 +43,24 @@ http.createServer(
                     });
                 });
                 break;
+            case "/getComment":  // 查询留言
+                connection.query('SELECT * FROM commentarys', function (err, result, fields) {
+                    if (err) throw err;
+                    var str = JSON.stringify(result);
+                    res.end(str);
+                })
+                break;
+            case "/addComment": // 插入留言
+                console.log(params);
+
+                var sql = 'INSERT INTO commentarys (commentary,time,name) VALUES ("'+params.query.comment+'","'+params.query.time+'","'+params.query.name+'");'
+                console.log(sql)
+                connection.query(sql, function (err, result, fields) {
+                    if (err) throw err;
+                    var str = JSON.stringify(result);
+                    res.end(str);
+                })
+                break;
             case "/delArticle":
                 // todo build sql to del article
                 break;
@@ -53,9 +70,8 @@ http.createServer(
             case "/updateArticle":
                 // todo update article
                 break;
-            // 其余情况返回错误
-            default:
-                res.writeHead(200, { 'Content-Type': 'text/plain;charset=utf-8' });
+            default: // 其余情况返回错误
+                res.writeHead(200, {'Content-Type': 'text/plain;charset=utf-8'});
                 res.end(JSON.stringify("{'error':'你请求的地址是错的哈哈哈哈'}"));
                 break;
         }

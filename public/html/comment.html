@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../public/linkCss/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../public/css/media.css">
+    <link rel="stylesheet" href="../../public/css/commentary.css">
+    <link rel="stylesheet" href="../../public/css/commentInput.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--页眉-->
+<header class="header">
+    <div class="headerInner">
+        <!--headerLogo-->
+        <div class="logo"></div>
+        <p class="logoText">Do something Interesting.</p>
+        <!--header导航-->
+        <ul class="nav">
+            <li class="nav_list nav_list_last"><a href="comment.html">留言区</a></li>
+            <li class="nav_list"><a href="works.html">作品</a></li>
+            <li class="nav_list"><a href="blog.html">博客</a></li>
+            <li class="nav_list"><a href="../index.html">首页</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="bg_pic">
+    <!--评论输入-->
+    <div class="commentary">
+        <span class="input input--juro">
+            <input class="input__field input__field--juro" type="text" id="input_name" />
+            <label class="input__label input__label--juro" for="input_name">
+                <span class="input__label-content input__label-content--juro">Name</span>
+            </label>
+        </span>
+        <span class="input input--juro">
+            <input class="input__field input__field--juro" type="text" id="input_time" />
+            <label class="input__label input__label--juro" for="input_time">
+                <span class="input__label-content input__label-content--juro">time</span>
+            </label>
+        </span>
+        <span class="input input--juro">
+            <input class="input__field input__field--juro" type="text" id="input_comment" />
+            <label class="input__label input__label--juro" for="input_comment">
+                <span class="input__label-content input__label-content--juro">comment</span>
+            </label>
+        </span>
+    </div>
+    <div class="sub_btn" id="sub_btn">
+        <i class="fa fa-chevron-right"></i>
+    </div>
+</div>
+<!--评论区-->
+<div class="commentaryWrap">
+    <!-- <div class="commentPart">
+        <div class="user_info">
+            <img src="../img/logo.gif" class="user_img" alt="">
+            <div class="user_name">一件白衬衫</div>    
+            <div class="user_time">2017年10月24</div>    
+        </div>
+        <div class="user_comment">
+            <div class="first_comment">一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫一件白衬衫</div>
+            <div class="reply_comment"></div>
+        </div>
+        <div class="user_reply">
+            <div class="reply">回复</div>
+            <div class="reply_up">点个赞</div>
+        </div>
+    </div> -->
+
+</div>
+
+<script src="../../public/js/jquery-3.1.0.min.js"></script>
+<script src="../../public/js/comment.js"></script>
+<script src="../../public/js/inputComponent.js"></script>
+</body>
+</html>
