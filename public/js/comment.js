@@ -51,7 +51,7 @@ function addComment(subUserName,subUserTime,subUserComment) {
     $.ajax({
         url: '/addComment',                                                                                                  // 请求的后端地址
         data: {comment:subUserComment,time:subUserTime,name:subUserName},                                                                                                 // 请求的参数
-        type: 'post',                                                                                                         // 请求的方式，get or post
+        type: 'get',                                                                                                         // 请求的方式，get or post
         dataType: 'json',  
         beforeSend:function() {
             if(subUserName == ""||subUserTime == ""||subUserComment == ""){
