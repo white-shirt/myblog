@@ -43,7 +43,7 @@ function getComment() {
             }
         },
         error: function () {
-            alert("异常123！");
+            alert("get异常！");
         }
     })
 };
@@ -63,7 +63,7 @@ function addComment(subUserName,subUserTime,subUserComment) {
             getComment();                                                                 
         },
         error: function () {
-            alert("异常123！");
+            alert("add异常！");
         }
     })
 };
