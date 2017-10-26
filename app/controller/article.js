@@ -13,13 +13,13 @@ var pageSize = 5;                                                               
 var http = require('http');
 var urllib = require('url');
 
-http.createServer(
+var server = http.createServer(
     function (req, res) {
         res.charset = 'utf-8';
         var returnJson;                                                                                                                                     // 将要返回给前端的json串
         var params = urllib.parse(req.url, true);
         var total;                                                                                                                                          // 文章总数
-        res.writeHead(200, {'Content-Type': 'application/json;charset=utf-8'});
+        res.writeHead(200, { 'Content-Type': 'application/json;charset=utf-8' });
 
         switch (params.pathname) {
             case "/getArticle":                                                                                                                             // 如果url是/getArticle就从数据库查寻出结果并返回
@@ -53,7 +53,7 @@ http.createServer(
             case "/addComment": // 插入留言
                 console.log(params);
 
-                var sql = 'INSERT INTO commentarys (commentary,time,name) VALUES ("'+params.query.comment+'","'+params.query.time+'","'+params.query.name+'");'
+                var sql = 'INSERT INTO commentarys (commentary,time,name) VALUES ("' + params.query.comment + '","' + params.query.time + '","' + params.query.name + '");'
                 console.log(sql)
                 connection.query(sql, function (err, result, fields) {
                     if (err) throw err;
@@ -61,21 +61,20 @@ http.createServer(
                     res.end(str);
                 })
                 break;
-            case "/delArticle":
-                // todo build sql to del article
+            case "/delArticle": // todo build sql to del article
                 break;
-            case "/addArticle":
-                // todo add article
+            case "/addArticle": // todo add article
                 break;
-            case "/updateArticle":
-                // todo update article
+            case "/updateArticle": // todo update article
                 break;
             default: // 其余情况返回错误
-                res.writeHead(200, {'Content-Type': 'text/plain;charset=utf-8'});
+                res.writeHead(200, { 'Content-Type': 'text/plain;charset=utf-8' });
                 res.end(JSON.stringify("{'error':'你请求的地址是错的哈哈哈哈'}"));
                 break;
         }
 
-    }).listen(1337, "127.0.0.1");                                                                                                                           // 监听浏览器的http://127.0.0.1:1337请求
+    });
+server.setTimeout(30 * 1000)
+server.listen(1337, "127.0.0.1");                                                                                                                           // 监听浏览器的http://127.0.0.1:1337请求
 
 console.log('Server running at http://127.0.0.1:1337/');                                                                                                    // 打印帮助提示
